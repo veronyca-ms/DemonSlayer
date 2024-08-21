@@ -1,0 +1,109 @@
+/* YOU TUBER: https://youtu.be/IcjhB0emU04?si=G-6ncSqB5qNBWAMi
+
+MINUTO: 1:27:00 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+
+main .personagem {
+  display: none;
+  height: 100vh;
+}
+
+main .personagem.selecionado {
+  display: block;
+}
+
+main .personagem .imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteudo {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 380px;
+}
+
+.conteudo .nome-personagem {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Roboto Mono", monospace;
+  /* font-weight: 800; */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.conteudo .descricao {
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.botoes {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  bottom: 0;
+  flex-direction: column; 
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  /* align-items: center; */
+   word-spacing: 30px;
+}
+
+.botoes .botao {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.botoes .botao img {
+  border-radius: 50%;
+}
+
+.botoes .botao.selecionado {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #D9D9D9;
+  border-radius: 50%;
+}
+
+
+a {
+  color: #E1EDE2;
+  right: 0;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 22px;
+  margin: 10px;
+  border-radius: 50%;
+  font-family: "arial";
+  text-decoration: none;
+}
+
+
